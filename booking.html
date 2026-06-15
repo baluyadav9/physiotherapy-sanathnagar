@@ -1,0 +1,347 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Slot | Physiotherapy Sanathnagar, Hyderabad</title>
+  <meta name="description" content="Book a physiotherapy appointment at Physiotherapy Sanathnagar, Hyderabad. Choose your date, time, and service. Same-day slots available." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-icon">🦴</div>
+        <div class="logo-text">
+          <span class="logo-name">Physiotherapy Sanathnagar</span>
+          <span class="logo-sub">Sanathnagar, Hyderabad</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="contact.html" class="btn btn-outline btn-sm">Contact Us</a>
+        <a href="booking.html" class="btn btn-primary btn-sm">📅 Book a Slot</a>
+      </div>
+      <button class="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="nav-mobile">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <div class="mobile-cta">
+      <a href="contact.html" class="btn btn-outline">Contact Us</a>
+      <a href="booking.html" class="btn btn-primary">📅 Book a Slot</a>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('images/3.jpg');"></div>
+  <div class="container page-hero-content">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a><span class="breadcrumb-sep">›</span><span>Book a Slot</span>
+    </div>
+    <div class="eyebrow" style="color:#34d399;">Online Booking</div>
+    <h1>Book Your Appointment</h1>
+    <p>Select your preferred date, time, and service. We'll confirm your slot via phone or WhatsApp within 2 hours.</p>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section class="section">
+  <div class="container">
+    <div class="booking-layout">
+
+      <!-- FORM -->
+      <div class="fade-in">
+        <div class="form-card">
+
+          <!-- Progress -->
+          <div class="progress-bar">
+            <div class="progress-item">
+              <div class="progress-dot active">1</div>
+              <div class="progress-label">Details</div>
+            </div>
+            <div class="progress-line"></div>
+            <div class="progress-item">
+              <div class="progress-dot">2</div>
+              <div class="progress-label">Schedule</div>
+            </div>
+            <div class="progress-line"></div>
+            <div class="progress-item">
+              <div class="progress-dot">3</div>
+              <div class="progress-label">Confirm</div>
+            </div>
+          </div>
+
+          <form data-demo id="booking-form">
+
+            <!-- Section 1 -->
+            <div class="form-section-title">
+              <span class="step-badge">1</span> Personal Information
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="b-name">Full Name *</label>
+                <input type="text" id="b-name" name="name" placeholder="Your full name" required />
+              </div>
+              <div class="form-group">
+                <label for="b-age">Age</label>
+                <input type="text" id="b-age" name="age" placeholder="e.g. 35" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="b-phone">Phone Number *</label>
+                <input type="tel" id="b-phone" name="phone" placeholder="+91 XXXXX XXXXX" required />
+              </div>
+              <div class="form-group">
+                <label for="b-email">Email Address</label>
+                <input type="email" id="b-email" name="email" placeholder="your@email.com" />
+              </div>
+            </div>
+
+            <!-- Section 2 -->
+            <div class="form-section-title" style="margin-top:8px;">
+              <span class="step-badge">2</span> Service &amp; Therapist
+            </div>
+            <div class="form-group">
+              <label for="b-service">Service Required *</label>
+              <select id="b-service" name="service" required>
+                <option value="" disabled selected>Choose a service…</option>
+                <optgroup label="Common Services">
+                  <option>Sports Injury Rehabilitation</option>
+                  <option>Post-Surgery Rehabilitation</option>
+                  <option>Spine &amp; Back Pain Care</option>
+                  <option>Neurological Rehabilitation</option>
+                  <option>Paediatric Physiotherapy</option>
+                  <option>Chronic Pain Management</option>
+                  <option>Geriatric Physiotherapy</option>
+                  <option>Women's Health Physiotherapy</option>
+                </optgroup>
+                <optgroup label="Specific Treatments">
+                  <option>Manual Therapy / Massage</option>
+                  <option>Dry Needling / IMS</option>
+                  <option>TENS / IFT Therapy</option>
+                  <option>Ultrasound Therapy</option>
+                  <option>Exercise Rehabilitation</option>
+                </optgroup>
+                <option>Initial Assessment (Not Sure)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="b-therapist">Preferred Therapist</label>
+              <select id="b-therapist" name="therapist">
+                <option value="">No preference (best available)</option>
+                <option>Dr. Anjali Reddy – Orthopaedics &amp; Post-Surgery</option>
+                <option>Dr. Kiran Kumar – Sports Physiotherapy</option>
+                <option>Dr. Meena Sharma – Neurological Rehab</option>
+                <option>Dr. Suresh Nair – Paediatric &amp; Geriatric</option>
+              </select>
+            </div>
+
+            <!-- Section 3 -->
+            <div class="form-section-title" style="margin-top:8px;">
+              <span class="step-badge">3</span> Date &amp; Time
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="appt-date">Preferred Date *</label>
+                <input type="date" id="appt-date" name="date" required />
+              </div>
+              <div class="form-group">
+                <label for="b-session-type">Session Type</label>
+                <select id="b-session-type" name="session_type">
+                  <option>In-Clinic Visit</option>
+                  <option>Home Visit (extra charges apply)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Preferred Time Slot *</label>
+              <div class="time-slots">
+                <div class="time-slot" data-time="09:00">9:00 AM</div>
+                <div class="time-slot" data-time="09:30">9:30 AM</div>
+                <div class="time-slot unavailable" data-time="10:00">10:00 AM</div>
+                <div class="time-slot" data-time="10:30">10:30 AM</div>
+                <div class="time-slot" data-time="11:00">11:00 AM</div>
+                <div class="time-slot unavailable" data-time="11:30">11:30 AM</div>
+                <div class="time-slot" data-time="12:00">12:00 PM</div>
+                <div class="time-slot" data-time="14:00">2:00 PM</div>
+                <div class="time-slot" data-time="14:30">2:30 PM</div>
+                <div class="time-slot unavailable" data-time="15:00">3:00 PM</div>
+                <div class="time-slot" data-time="15:30">3:30 PM</div>
+                <div class="time-slot" data-time="16:00">4:00 PM</div>
+                <div class="time-slot unavailable" data-time="16:30">4:30 PM</div>
+                <div class="time-slot" data-time="17:00">5:00 PM</div>
+                <div class="time-slot" data-time="17:30">5:30 PM</div>
+                <div class="time-slot" data-time="18:00">6:00 PM</div>
+                <div class="time-slot" data-time="18:30">6:30 PM</div>
+                <div class="time-slot" data-time="19:00">7:00 PM</div>
+                <div class="time-slot" data-time="19:30">7:30 PM</div>
+              </div>
+              <input type="hidden" id="selected-time" name="time" />
+              <p style="font-size:0.76rem;color:var(--text-light);margin-top:10px;">Crossed-out slots are already booked. Click an available slot to select it.</p>
+            </div>
+
+            <!-- Section 4 -->
+            <div class="form-section-title" style="margin-top:8px;">
+              <span class="step-badge">4</span> Your Condition
+            </div>
+            <div class="form-group">
+              <label for="b-issue">Brief Description of Issue / Pain *</label>
+              <textarea id="b-issue" name="issue" rows="4" placeholder="e.g. I have lower back pain that started 3 weeks ago after lifting heavy objects. It radiates down my left leg…" required></textarea>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="b-duration">How long have you had this?</label>
+                <select id="b-duration" name="duration">
+                  <option value="">Select…</option>
+                  <option>Less than 1 week</option>
+                  <option>1–4 weeks</option>
+                  <option>1–3 months</option>
+                  <option>3–6 months</option>
+                  <option>6+ months / Chronic</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="b-visited">Visited us before?</label>
+                <select id="b-visited" name="visited">
+                  <option>No, this is my first visit</option>
+                  <option>Yes, I'm a returning patient</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="b-notes">Additional Notes (optional)</label>
+              <textarea id="b-notes" name="notes" rows="3" placeholder="Any allergies, medical history, or special requirements…"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit" style="margin-top:28px;border-radius:50px;">
+              📅 Confirm Booking Request
+            </button>
+            <p class="form-note">
+              ✅ We'll call or WhatsApp you within 2 hours to confirm your slot.<br>
+              🔒 Your details are completely confidential.
+            </p>
+          </form>
+
+          <div class="success-msg">
+            <div style="font-size:2.5rem;margin-bottom:14px;">🎉</div>
+            <strong style="font-size:1.1rem;">Booking Request Received!</strong><br><br>
+            Thank you! Our team will call or WhatsApp you within 2 hours to confirm your slot.<br><br>
+            For urgent queries, call us directly at <a href="tel:+919010424948"><strong>+91-9010424948</strong></a>.
+          </div>
+        </div>
+      </div>
+
+      <!-- SIDEBAR -->
+      <div class="booking-sidebar fade-in">
+
+        <div class="sidebar-card" style="background:linear-gradient(135deg,var(--navy),#0d2a3e);color:#fff;border-color:transparent;">
+          <h3 style="color:#fff;">📞 Need Help Booking?</h3>
+          <p style="font-size:0.85rem;color:rgba(255,255,255,0.65);margin-bottom:16px;">Call or WhatsApp us and we'll book your slot for you.</p>
+          <a href="tel:+919010424948" class="btn btn-accent" style="width:100%;justify-content:center;margin-bottom:10px;">📞 +91-9010424948</a>
+          <a href="https://wa.me/919010424948" target="_blank" rel="noopener" class="btn btn-glass" style="width:100%;justify-content:center;">💬 WhatsApp Us</a>
+        </div>
+
+        <div class="sidebar-card">
+          <h3>🕐 Clinic Hours</h3>
+          <ul class="hours-list">
+            <li><span class="day">Monday</span><span>9 AM – 8 PM</span></li>
+            <li><span class="day">Tuesday</span><span>9 AM – 8 PM</span></li>
+            <li><span class="day">Wednesday</span><span>9 AM – 8 PM</span></li>
+            <li><span class="day">Thursday</span><span>9 AM – 8 PM</span></li>
+            <li><span class="day">Friday</span><span>9 AM – 8 PM</span></li>
+            <li><span class="day">Saturday</span><span>9 AM – 8 PM</span></li>
+            <li><span class="day">Sunday</span><span style="color:var(--accent);font-weight:600;">9 AM – 1 PM</span></li>
+          </ul>
+        </div>
+
+        <div class="sidebar-card">
+          <h3>📋 What to Bring</h3>
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;">
+            <li style="display:flex;gap:10px;font-size:0.85rem;color:var(--text-mid);"><span>📄</span>Doctor's referral (if any)</li>
+            <li style="display:flex;gap:10px;font-size:0.85rem;color:var(--text-mid);"><span>🩻</span>X-rays, MRI, or scan reports</li>
+            <li style="display:flex;gap:10px;font-size:0.85rem;color:var(--text-mid);"><span>💊</span>List of current medications</li>
+            <li style="display:flex;gap:10px;font-size:0.85rem;color:var(--text-mid);"><span>👕</span>Comfortable, loose-fitting clothing</li>
+            <li style="display:flex;gap:10px;font-size:0.85rem;color:var(--text-mid);"><span>🪪</span>Valid ID proof</li>
+          </ul>
+        </div>
+
+        <div class="sidebar-card">
+          <h3>💡 Good to Know</h3>
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;">
+            <li style="display:flex;gap:10px;font-size:0.85rem;color:var(--text-mid);"><span style="color:var(--accent);">⚡</span>Same-day slots often available</li>
+            <li style="display:flex;gap:10px;font-size:0.85rem;color:var(--text-mid);"><span style="color:var(--accent);">🏠</span>Home visits for eligible patients</li>
+            <li style="display:flex;gap:10px;font-size:0.85rem;color:var(--text-mid);"><span style="color:var(--accent);">🚗</span>Free parking on premises</li>
+            <li style="display:flex;gap:10px;font-size:0.85rem;color:var(--text-mid);"><span style="color:var(--accent);">♿</span>Wheelchair accessible clinic</li>
+            <li style="display:flex;gap:10px;font-size:0.85rem;color:var(--text-mid);"><span style="color:var(--accent);">🔔</span>Confirmation within 2 hours</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-banner">
+  <div class="container">
+    <h2>Questions Before Booking?</h2>
+    <p>Our team is happy to help you choose the right service and therapist for your needs.</p>
+    <div class="cta-actions">
+      <a href="contact.html" class="btn btn-white btn-lg">Contact Us</a>
+      <a href="services.html" class="btn btn-glass btn-lg">View All Services</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo"><div class="logo-icon">🦴</div><div class="logo-text"><span class="logo-name" style="color:#fff;">Physiotherapy Sanathnagar</span><span class="logo-sub">Sanathnagar, Hyderabad</span></div></a>
+        <p>Expert physiotherapy care for Sanathnagar and greater Hyderabad since 2012.</p>
+        <div class="social-links"><a href="#" class="social-link">f</a><a href="#" class="social-link">📸</a><a href="#" class="social-link">▶</a><a href="#" class="social-link">💬</a></div>
+      </div>
+      <div class="footer-col"><h4>Quick Links</h4><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li><li><a href="booking.html">Book a Slot</a></li></ul></div>
+      <div class="footer-col"><h4>Services</h4><ul class="footer-links"><li><a href="services.html">Sports Injury</a></li><li><a href="services.html">Post-Surgery Rehab</a></li><li><a href="services.html">Spine &amp; Back Pain</a></li><li><a href="services.html">Neuro Rehab</a></li><li><a href="services.html">Paediatric Physio</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4><ul class="footer-contact-items"><li class="footer-contact-item"><span class="icon">📍</span><span>Sanathnagar, Hyderabad – 500018</span></li><li class="footer-contact-item"><span class="icon">📞</span><a href="tel:+919010424948" style="color:rgba(255,255,255,0.55)">+91-9010424948</a></li><li class="footer-contact-item"><span class="icon">✉️</span><a href="mailto:info@physiosanathnagar.in" style="color:rgba(255,255,255,0.55)">info@physiosanathnagar.in</a></li><li class="footer-contact-item"><span class="icon">🕐</span><span>Mon–Sat: 9 AM – 8 PM</span></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>© 2024 Physiotherapy Sanathnagar. All rights reserved.</p></div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<!-- WhatsApp Floating Button -->
+<div class="wa-float" id="waFloat">
+  <div class="wa-bubble" id="waBubble" style="display:none;">
+    <button class="wa-btn-close" onclick="document.getElementById('waBubble').style.display='none'" aria-label="Close">&#x2715;</button>
+    <div class="wa-name">Physiotherapy Sanathnagar</div>
+    <div class="wa-status">Online &mdash; typically replies instantly</div>
+    <div style="font-size:0.82rem;color:#333;line-height:1.5;">&#128075; Hi! How can we help?<br>Book a slot or ask us anything.</div>
+  </div>
+  <a href="https://wa.me/919010424948?text=Hi%2C+I+would+like+to+book+a+physiotherapy+appointment." target="_blank" rel="noopener" class="wa-btn" id="waBtn" aria-label="Chat on WhatsApp" title="Chat on WhatsApp">
+    <svg viewBox="0 0 32 32" width="32" height="32" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M16 2C8.268 2 2 8.268 2 16c0 2.492.666 4.83 1.83 6.847L2 30l7.37-1.793A13.94 13.94 0 0016 30c7.732 0 14-6.268 14-14S23.732 2 16 2zm0 25.6a11.56 11.56 0 01-5.9-1.61l-.423-.25-4.37 1.063 1.097-4.26-.277-.436A11.56 11.56 0 014.4 16c0-6.396 5.204-11.6 11.6-11.6S27.6 9.604 27.6 16 22.396 27.6 16 27.6zm6.345-8.676c-.347-.174-2.056-1.014-2.374-1.13-.318-.115-.55-.173-.78.174-.23.347-.893 1.13-1.095 1.362-.202.23-.404.26-.75.086-.347-.174-1.466-.54-2.793-1.722-1.032-.92-1.73-2.056-1.933-2.402-.202-.347-.022-.534.152-.706.157-.157.347-.405.52-.607.174-.202.231-.347.347-.578.115-.23.057-.433-.029-.607-.086-.174-.78-1.879-1.07-2.574-.28-.676-.567-.584-.78-.595l-.664-.012c-.23 0-.607.087-.924.433-.318.347-1.212 1.184-1.212 2.888s1.24 3.35 1.413 3.58c.173.231 2.44 3.726 5.911 5.225.827.357 1.472.57 1.975.73.83.263 1.585.226 2.183.137.666-.1 2.056-.84 2.346-1.65.29-.81.29-1.505.202-1.65-.086-.144-.317-.23-.664-.404z"/></svg>
+  </a>
+</div>
+<script>
+(function(){
+  setTimeout(function(){ document.getElementById("waBubble").style.display="block"; }, 3500);
+  document.getElementById("waBtn").addEventListener("click", function(){ document.getElementById("waBubble").style.display="none"; });
+})();
+</script>
+</body>
+</html>
